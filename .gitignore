@@ -1,2 +1,6 @@
 common/node_modules
 inandout/node_modules
+dev/node_modules
+dev2/node_modules
+HMR/node_modules
+HMR-dev/node_modules
