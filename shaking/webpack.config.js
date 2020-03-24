@@ -3,9 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  mode: "production",
   entry: { //入口文件
     app: './src/index.js',
-    print: './src/print.js'
   },
   devtool: 'inline-source-map', //source map配置
   plugins: [
@@ -15,9 +15,8 @@ module.exports = {
     })
   ],
   output: { //打包出口
-    filename: '[name].bundle.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
-  },
-  mode: "production"
+  }
 };

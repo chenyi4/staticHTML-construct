@@ -33,6 +33,9 @@ npm run build
 =================== HMR - dev -node ==========<br/>
 1.通过 Node.js API 来实现热加载模块更新
 <br/>
+=================== shaking ==========<br/>
+1.清除js中没有使用但是写了的代码。2.
+<br/>
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 <br/>
 1.及时项目里面写了一些文件，如果没有import依赖，webpack就不会去打包
@@ -55,6 +58,7 @@ webpack-dev-server /webpack-dev-middleware获取服务，可以修改端口号�
 <br/>
 9.启用热加载  HMR，只更新修改的模块，而不是整个都更新
 <br/>
+10.tree shaking package.json 里面添加 "sideEffects": false, 就会在打包的时候自动删除多余的代码(没用被import的模块)，如果配置数组，数组里面的文件就不会被删除，其他的就会被删除。 package.json -p 模式可以实现代码的压缩或者export配置mode: "production"
 
 <div style="margin-top: 120px">
 打包编译JS
