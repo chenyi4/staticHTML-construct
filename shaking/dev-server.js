@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const config = require('./webpack.config.js');
 const options = {
   contentBase: './dist',
-  hot: true,
+  hot: true, //热模块加载
   host: 'localhost'
 };
 

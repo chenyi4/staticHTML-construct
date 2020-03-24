@@ -5,9 +5,8 @@ function component() {
   
   
    // lodash 是由当前 script 脚本 import 导入进来的
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   element.innerHTML = [
-    'Hello webpack!',
+    'Hello webpack2!',
     '5 cubed is equal to ' + cube(5)+square(2)
   ].join('\n\n');
     
