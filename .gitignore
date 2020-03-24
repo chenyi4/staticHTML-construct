@@ -5,3 +5,4 @@ dev2/node_modules
 HMR/node_modules
 HMR-dev/node_modules
 shaking/node_modules
+production/node_modules

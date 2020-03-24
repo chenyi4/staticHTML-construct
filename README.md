@@ -34,7 +34,7 @@ npm run build
 1.通过 Node.js API 来实现热加载模块更新
 <br/>
 =================== shaking ==========<br/>
-1.清除js中没有使用但是写了的代码。2.
+1.清除js中没有使用但是写了的代码。2.代码压缩，减少代码大小，混淆
 <br/>
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 <br/>
@@ -96,3 +96,4 @@ Vue Loader：此 loader 支持用于 vue 组件的 HMR，提供开箱即用体�
 Elm Hot Loader：支持用于 Elm 程序语言的 HMR。<br/>
 Redux HMR：无需 loader 或插件！只需对 main store 文件进行简单的修改。<br/>
 Angular HMR：No loader necessary! A simple change to your main NgModule file is all that's required to have <br/>full control over the HMR APIs.没有必要使用 loader！只需对主要的 NgModule 文件进行简单的修改，由 HMR API 完<br/>全控制。
+<div>webpack-merge模块</div>
