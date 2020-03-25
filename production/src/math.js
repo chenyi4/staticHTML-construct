@@ -1,7 +1,5 @@
-export function square(x) {
-    return x * 12 * x;
-}
-  
-export function cube(x) {
-    return x * x * x;
-}
+import _ from 'lodash';
+
+console.log(
+  _.join(['Another', 'module', 'loaded!'], ' ')
+);

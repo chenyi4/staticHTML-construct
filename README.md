@@ -36,10 +36,16 @@ npm run build
 =================== shaking ==========<br/>
 1.清除js中没有使用但是写了的代码。2.代码压缩，减少代码大小，混淆
 <br/>
+=================== production ==========<br/>
+1.拆分webpack。分别配置生产环境和构建环境的不同配置<br/>
+2.单独拆分css包，并且压缩<br/>
+<br/>
+====================active-import===========<br/>
+1.可以动态加入模块，不使用的情况下不加载,可以使用的时候再去加载js模块，每个模块都拆分成单独的js。
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 <br/>
 1.及时项目里面写了一些文件，如果没有import依赖，webpack就不会去打包
-<br/>
+<br />
 2.npm install --save-dev file-loader 处理图片文件
 <br/>
 3.file-loader加载字体
@@ -59,7 +65,13 @@ webpack-dev-server /webpack-dev-middleware获取服务，可以修改端口号�
 9.启用热加载  HMR，只更新修改的模块，而不是整个都更新
 <br/>
 10.tree shaking package.json 里面添加 "sideEffects": false, 就会在打包的时候自动删除多余的代码(没用被import的模块)，如果配置数组，数组里面的文件就不会被删除，其他的就会被删除。 package.json -p 模式可以实现代码的压缩或者export配置mode: "production"
-
+<br/>
+11.ExtractTextPlugin 把css从bundle.js拆分出来变成单独的css
+<br/>
+12. optimization.splitChunks 拆分公共的js模块到通用的模块里面
+<br/>
+13. 懒加载，不适用的情况不加载。使用的情况下才回去加载。但是会拆分模块
+<br/>
 <div style="margin-top: 120px">
 打包编译JS
 压缩合并css
