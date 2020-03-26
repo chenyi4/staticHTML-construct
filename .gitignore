@@ -7,3 +7,4 @@ HMR-dev/node_modules
 shaking/node_modules
 production/node_modules
 active-import/node_modules
+*/node_modules

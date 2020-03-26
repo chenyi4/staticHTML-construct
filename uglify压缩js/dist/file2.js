@@ -1,0 +1,1 @@
+console.log(add(3,7));
