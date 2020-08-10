@@ -2,22 +2,12 @@ var UglifyJS = require("uglify-es");
 var fs = require("fs");
 
 var conFig = {
-    enterFile: './../src/main/resources/static/js/',
+    enterFile: 'dist/',
     outFile: 'files'
 }
 
 var fileNames = [
-  "cover.js",
   "customize.js",
-  "customizeInit.js",
-  "customizeJqgridId.js",
-  "customizeSave.js",
-  "deviceDateTime.js",
-  "formcheck.js",
-  "jsplumbAttach.js",
-  "jsplumbCustomize.js",
-  "language.js",
-  "viewapilist.js"
 ];
 
 deleteDist();
@@ -53,8 +43,8 @@ function Uglify(code) {
         mangle: {
             toplevel: false, //不混淆全局的变量名
         },
-        unsafe_math: true,
-        nameCache: {}
+        // unsafe_math: true,
+        // nameCache: {}
     };
     for(var codeI in code){
         var true_code = code[codeI];
